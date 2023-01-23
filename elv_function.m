@@ -1,9 +1,9 @@
-function y = elv_function (inputs)
+function y = elv_function (input)
 global Ts1 Ts2 T Elvd Elvs
 
 e_l=0;
-Vlv = inputs(1);
-Time = inputs(2);
+
+Time = input;
 
 if Time>=0 && Time< Ts1
         e_l = 1 - cos ((Time/Ts1) * pi);

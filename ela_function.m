@@ -1,15 +1,9 @@
-function y = ela_function (inputs)
+function y = ela_function (input)
+global Tpwb T Tpww Elamin Elamax
 
-Tpwb = 0.92;
-Tpww = 0.09;
-Elamin = 0.15;
-Elamax = 0.25;
-Pla0 = 1;
-Vla0 = 4;
-T = 1;
 el = 0;
-Vla = inputs(1);
-Time = inputs(2);
+
+Time = input;
 
      if Time>=0 && Time< Tpwb
         el = 0;

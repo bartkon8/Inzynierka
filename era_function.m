@@ -1,15 +1,14 @@
-function y = era_function (inputs)
-
+function y = era_function (input)
+global T Tpwb Tpww Eramin Eramax 
 Tpwb = 0.92;
 Tpww = 0.09;
 Eramin = 0.15;
 Eramax = 0.25;
-Pra0 = 1;
-Vra0 = 4;
+
 T = 1;
 er = 0;
-Vra = inputs(1);
-Time = inputs(2);
+
+Time = input;
 
      if Time>=0 && Time<Tpwb
         er = 0;
